@@ -88,6 +88,6 @@ The requirements in this project are as follows:
 
 > For CSCI 3055 - Final Project
 
-> Project Started on March 9th, 2016
+> Project Started: March 9th, 2016
 
-> Project Submitted on 
+> Project Submitted: TBA
