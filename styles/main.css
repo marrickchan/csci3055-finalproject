@@ -7,7 +7,7 @@ body{
 	margin:0px;
 	color:#FFFFFF;
 	font-family:"Century Gothic",sans-serif;
-	background-color:#464443;
+	background-color:#e1e1ea;
 	color:#FFFFFF;
     font-size:larger;
     margin-left: 0px; 
@@ -46,22 +46,22 @@ h2 {
 	left: 0;
 	z-index: 9999;
 	width: 100%;
-	height: 30px;
-	background-color: #ff9933;
+	height: 60px;
+	background-color: #0066ff;
 }
 
 .fixed-footer-bar {
 	position: fixed;
 	bottom: 15px;
-	left: 0;
+	right: 15px;
 	z-index: 9999;
-	width: 100%;
 	height: 22px;
-	background-color: #ff9933;
+	color: #000000;
+	text-transform: uppercase; 
 }
 
 #wrapper {
-	background-color: #464443;
+	background-color: #e1e1ea;
 	width: 100%;
 	min-width: 740px;
 	max-width: 1920px;
@@ -88,22 +88,18 @@ h2 {
 	padding: 0px;
 }
 
-#mainnav a {
-	width: 50%;
+#mainnav li {
+	width: 90%;
 	display: block;
 	float: left;
-	background-color:  #ff9933;
-	text-align: center;
+	font-size: 30px;
+	background-color:  #0066ff;
 	color: #FFFFFF;
 	text-transform: uppercase; 
-	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-top: 13px;
+	padding-left: 50px;
+	padding-bottom: 0px;
 	text-decoration: none;
-}
-
-#mainnav a:hover, #mainnav a:focus, #mainnav a.thispage {
-	text-decoration: none;
-	background-color: #ff6600;
 }
 
 #subnav ul {
@@ -119,22 +115,7 @@ h2 {
 }
 
 #footnav a {
-
-	width: 100%;
-	display: block;
-	float:center;
-	background-color: #ff9933;
-	text-align: center;
-	color: #FFFFFF;
-	text-transform: uppercase; 
-	padding-top: 6px;
-	padding-bottom: 10px;
 	text-decoration: none;
-}
-
-#footnav a:hover, #mainnav a:focus {
-	text-decoration: none;
-	background-color: #ff6600;
 }
 
 #bottom {
