@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* -----------
+    Components
+   ----------- */
+body{
+	width:100%;
+	margin:0px;
+	color:#FFFFFF;
+	font-family:"Century Gothic",sans-serif;
+	background-color:#464443;
+	color:#FFFFFF;
+    font-size:larger;
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+
+p {
+	font-size: 26px;
+}
+
+h1 { 
+	color: #FFFFFF;
+	font-family: "Century Gothic",
+	sans-serif;
+	font-weight: 600;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2 { 
+	color: #FFFFFF;
+	font-family: "Century Gothic",sans-serif;
+	font-weight: 600;
+	font-size: 35px;
+	text-align: center;
+	text-decoration:underline;
+}
+
+
+.fixed-nav-bar {
+	position: fixed;
+	top: 0px;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 30px;
+	background-color: #ff9933;
+}
+
+.fixed-footer-bar {
+	position: fixed;
+	bottom: 15px;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 22px;
+	background-color: #ff9933;
+}
+
+#wrapper {
+	background-color: #464443;
+	width: 100%;
+	min-width: 740px;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#top {
+	margin-top: 0px; 
+	padding-top:60px;
+}
+
+#main {
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	float: left;
+	text-align: center;
+}
+
+#mainnav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainnav a {
+	width: 50%;
+	display: block;
+	float: left;
+	background-color:  #ff9933;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase; 
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-decoration: none;
+}
+
+#mainnav a:hover, #mainnav a:focus, #mainnav a.thispage {
+	text-decoration: none;
+	background-color: #ff6600;
+}
+
+#subnav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footnav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footnav a {
+
+	width: 100%;
+	display: block;
+	float:center;
+	background-color: #ff9933;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase; 
+	padding-top: 6px;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+
+#footnav a:hover, #mainnav a:focus {
+	text-decoration: none;
+	background-color: #ff6600;
+}
+
+#bottom {
+	margin-bottom: 80px;
+}
