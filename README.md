@@ -22,6 +22,11 @@ The requirements in this project are as follows:
     * Updated README.md with problem to solve
     * Updated README.md to display to do
     * Added brief entries into corresponding headings. 
+  * April 4th, 2016
+    * Created a layout for initial webpage
+    * Added initial layout with CSS
+  * April 6th, 2016
+    * Edited layout and create main content section
 
 3. Problem Statement and Language Selection
   * The problem I am addressing is internal webpage searching. 
