@@ -15,7 +15,7 @@ body{
 }
 
 p {
-	font-size: 26px;
+	font-size: 22px;
 }
 
 h1 { 
@@ -25,7 +25,8 @@ h1 {
 	font-weight: 600;
 	font-size: 50px;
 	text-align: center;
-	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: normal;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -60,11 +61,24 @@ h2 {
 	text-transform: uppercase; 
 }
 
+.centered {
+	padding: 10px;
+	min-width: 100px;
+	max-width: 1500px;
+	background-color: rgba(0, 102, 255, 0.5);
+}
+
+.mainContent {
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
 #wrapper {
+	padding-top: 65px;
 	background-color: #e1e1ea;
 	width: 100%;
-	min-width: 740px;
-	max-width: 1920px;
+	min-width: 100px;
+	max-width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -74,13 +88,6 @@ h2 {
 	padding-top:60px;
 }
 
-#main {
-	width: 100%;
-	margin-left: 0%;
-	margin-right: 0%;
-	float: left;
-	text-align: center;
-}
 
 #mainnav ul {
 	list-style-type: none;
