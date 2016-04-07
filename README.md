@@ -27,6 +27,8 @@ The requirements in this project are as follows:
     * Added initial layout with CSS
   * April 6th, 2016
     * Edited layout and create main content section
+  * April 7th, 2016
+    * Added pictures for webpage indexing
 
 3. Problem Statement and Language Selection
   * The problem I am addressing is internal webpage searching. 
