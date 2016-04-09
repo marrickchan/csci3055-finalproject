@@ -29,6 +29,9 @@ The requirements in this project are as follows:
     * Edited layout and create main content section
   * April 7th, 2016
     * Added pictures for webpage indexing
+  * April 9th, 2016
+    * Added search field on top bar for use after indexing.
+    * Created initial Dart file for the webpage.
 
 3. Problem Statement and Language Selection
   * The problem I am addressing is internal webpage searching. 
