@@ -1,123 +1,126 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Google Dart Indexing Example</title>
-<!--[if lte IE 8]>
-<script type="text/javascript" src="js/html5shiv.js"></script>
-<![endif]-->
-<link rel="stylesheet" type="text/css" href="styles/main.css">
-<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Google Dart Indexing Example</title>
+        <!--[if lte IE 8]>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script async type="application/dart" src="main.dart"></script>
+        <script async src="packages/browser/dart.js"></script>
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    </head>
 
-<body>
-<div id="wrapper">
+    <body>
+        <div id="wrapper">
 
-    <header id="top"></header>
+            <header id="top"></header>
 
-    <!-- Navigation -->
-    <nav id="mainnav" class="fixed-nav-bar">
-        <ul>
-            <li>Google Dart Indexing Example</li>
-        </ul>
-        <p style="text-align: right; padding-right: 15px;">Search: <input type="text" id="searchField" onfocus="if(this.value=='Search a Pokemon!'){this.value='';}" onblur="if(this.value == '') { this.value = 'Search a Pokemon!'; }" value="Search a Pokemon!"></p>
-    </nav>
+            <!-- Navigation -->
+            <nav id="mainnav" class="fixed-nav-bar">
+                <ul>
+                    <li>Google Dart Indexing Example</li>
+                </ul>
+                <p style="text-align: right; padding-right: 15px;">Search: <input type="text" id="searchField" onfocus="if(this.value=='Search a Pokemon!'){this.value='';}" onblur="if(this.value == '') { this.value = 'Search a Pokemon!'; }" value="Search a Pokemon!"></p>
+            </nav>
 
-    <!-- Return to Top -->
-    <nav id="footnav" class="fixed-footer-bar">
-        <ul>
-            <li><a href="#wrapper">Back to Top</a></li>
-        </ul>
-    </nav>  
+            <!-- Return to Top -->
+            <nav id="footnav" class="fixed-footer-bar">
+                <ul>
+                    <li><a href="#wrapper">Back to Top</a></li>
+                </ul>
+            </nav>  
 
-    <!-- Main Content for BREAKthrough -->
-    <div class="centered mainContent">
-        <p></p>
-        <h1>Pokemon TCG: Generations Collection</h1>
-        <br><br>
+            <!-- Main Content for BREAKthrough -->
+            <div class="centered mainContent">
+                <p></p>
+                <h1>Pokemon TCG: Generations Collection</h1>
+                <br><br>
+                <p>Searching for: </p><span id="searchPreview"></span>
 
-        <div class="card-block">
-            <img src="images/generations/1.png" class="tcg-preview" title="Venusaur EX"></img>
-            <img src="images/generations/2.png" class="tcg-preview" title="Mega Venusaur EX"></img>
-            <img src="images/generations/3.png" class="tcg-preview" title="Caterpie"></img>
-            <img src="images/generations/4.png" class="tcg-preview" title="Metapod"></img>
+                <div class="card-block">
+                    <img src="images/generations/1.png" class="tcg-preview" title="Venusaur EX"></img>
+                    <img src="images/generations/2.png" class="tcg-preview" title="Mega Venusaur EX"></img>
+                    <img src="images/generations/3.png" class="tcg-preview" title="Caterpie"></img>
+                    <img src="images/generations/4.png" class="tcg-preview" title="Metapod"></img>
 
-            <img src="images/generations/5.png" class="tcg-preview" title="Butterfree"></img>
-            <img src="images/generations/6.png" class="tcg-preview" title="Paras"></img>
-            <img src="images/generations/7.png" class="tcg-preview" title="Parasect"></img>
-            <img src="images/generations/8.png" class="tcg-preview" title="Tangela"></img>
+                    <img src="images/generations/5.png" class="tcg-preview" title="Butterfree"></img>
+                    <img src="images/generations/6.png" class="tcg-preview" title="Paras"></img>
+                    <img src="images/generations/7.png" class="tcg-preview" title="Parasect"></img>
+                    <img src="images/generations/8.png" class="tcg-preview" title="Tangela"></img>
 
-            <img src="images/generations/9.png" class="tcg-preview" title="Pinsir"></img>
-            <img src="images/generations/10.png" class="tcg-preview" title="Leafeon EX"></img>
-            <img src="images/generations/11.png" class="tcg-preview" title="Charizard EX"></img>
-            <img src="images/generations/12.png" class="tcg-preview" title="Mega Charizard EX"></img>
+                    <img src="images/generations/9.png" class="tcg-preview" title="Pinsir"></img>
+                    <img src="images/generations/10.png" class="tcg-preview" title="Leafeon EX"></img>
+                    <img src="images/generations/11.png" class="tcg-preview" title="Charizard EX"></img>
+                    <img src="images/generations/12.png" class="tcg-preview" title="Mega Charizard EX"></img>
 
-            <img src="images/generations/13.png" class="tcg-preview" title="Ninetales EX"></img>
-            <img src="images/generations/14.png" class="tcg-preview" title="Ponyta"></img>
-            <img src="images/generations/15.png" class="tcg-preview" title="Rapidash"></img>
-            <img src="images/generations/16.png" class="tcg-preview" title="Magmar"></img>
+                    <img src="images/generations/13.png" class="tcg-preview" title="Ninetales EX"></img>
+                    <img src="images/generations/14.png" class="tcg-preview" title="Ponyta"></img>
+                    <img src="images/generations/15.png" class="tcg-preview" title="Rapidash"></img>
+                    <img src="images/generations/16.png" class="tcg-preview" title="Magmar"></img>
 
-            <img src="images/generations/17.png" class="tcg-preview" title="Blastoise EX"></img>
-            <img src="images/generations/18.png" class="tcg-preview" title="Mega Blastoise EX"></img>
-            <img src="images/generations/19.png" class="tcg-preview" title="Shellder"></img>
-            <img src="images/generations/20.png" class="tcg-preview" title="Cloyster"></img>
+                    <img src="images/generations/17.png" class="tcg-preview" title="Blastoise EX"></img>
+                    <img src="images/generations/18.png" class="tcg-preview" title="Mega Blastoise EX"></img>
+                    <img src="images/generations/19.png" class="tcg-preview" title="Shellder"></img>
+                    <img src="images/generations/20.png" class="tcg-preview" title="Cloyster"></img>
 
-            <img src="images/generations/21.png" class="tcg-preview" title="Krabby"></img>
-            <img src="images/generations/22.png" class="tcg-preview" title="Magikarp"></img>
-            <img src="images/generations/23.png" class="tcg-preview" title="Gyarados"></img>
-            <img src="images/generations/24.png" class="tcg-preview" title="Vaporean EX"></img>
+                    <img src="images/generations/21.png" class="tcg-preview" title="Krabby"></img>
+                    <img src="images/generations/22.png" class="tcg-preview" title="Magikarp"></img>
+                    <img src="images/generations/23.png" class="tcg-preview" title="Gyarados"></img>
+                    <img src="images/generations/24.png" class="tcg-preview" title="Vaporean EX"></img>
 
-            <img src="images/generations/25.png" class="tcg-preview" title="Articuno"></img>
-            <img src="images/generations/26.png" class="tcg-preview" title="Pikachu"></img>
-            <img src="images/generations/27.png" class="tcg-preview" title="Raichu"></img>
-            <img src="images/generations/28.png" class="tcg-preview" title="Jolteon EX"></img>
+                    <img src="images/generations/25.png" class="tcg-preview" title="Articuno"></img>
+                    <img src="images/generations/26.png" class="tcg-preview" title="Pikachu"></img>
+                    <img src="images/generations/27.png" class="tcg-preview" title="Raichu"></img>
+                    <img src="images/generations/28.png" class="tcg-preview" title="Jolteon EX"></img>
 
-            <img src="images/generations/29.png" class="tcg-preview" title="Zapdos"></img>
-            <img src="images/generations/30.png" class="tcg-preview" title="Zubat"></img>
-            <img src="images/generations/31.png" class="tcg-preview" title="Golbat"></img>
-            <img src="images/generations/32.png" class="tcg-preview" title="Slowpoke"></img>
+                    <img src="images/generations/29.png" class="tcg-preview" title="Zapdos"></img>
+                    <img src="images/generations/30.png" class="tcg-preview" title="Zubat"></img>
+                    <img src="images/generations/31.png" class="tcg-preview" title="Golbat"></img>
+                    <img src="images/generations/32.png" class="tcg-preview" title="Slowpoke"></img>
 
-            <img src="images/generations/33.png" class="tcg-preview" title="Gastly"></img>
-            <img src="images/generations/34.png" class="tcg-preview" title="Haunter"></img>
-            <img src="images/generations/35.png" class="tcg-preview" title="Gengar"></img>
-            <img src="images/generations/36.png" class="tcg-preview" title="Jynx"></img>
+                    <img src="images/generations/33.png" class="tcg-preview" title="Gastly"></img>
+                    <img src="images/generations/34.png" class="tcg-preview" title="Haunter"></img>
+                    <img src="images/generations/35.png" class="tcg-preview" title="Gengar"></img>
+                    <img src="images/generations/36.png" class="tcg-preview" title="Jynx"></img>
 
-            <img src="images/generations/37.png" class="tcg-preview" title="Meowstic EX"></img>
-            <img src="images/generations/38.png" class="tcg-preview" title="Diglett"></img>
-            <img src="images/generations/39.png" class="tcg-preview" title="Dugtrio"></img>
-            <img src="images/generations/40.png" class="tcg-preview" title="Machop"></img>
+                    <img src="images/generations/37.png" class="tcg-preview" title="Meowstic EX"></img>
+                    <img src="images/generations/38.png" class="tcg-preview" title="Diglett"></img>
+                    <img src="images/generations/39.png" class="tcg-preview" title="Dugtrio"></img>
+                    <img src="images/generations/40.png" class="tcg-preview" title="Machop"></img>
 
-            <img src="images/generations/41.png" class="tcg-preview" title="Machoke"></img>
-            <img src="images/generations/42.png" class="tcg-preview" title="Machamp"></img>
-            <img src="images/generations/43.png" class="tcg-preview" title="Geodude"></img>
-            <img src="images/generations/44.png" class="tcg-preview" title="Graveler"></img>
+                    <img src="images/generations/41.png" class="tcg-preview" title="Machoke"></img>
+                    <img src="images/generations/42.png" class="tcg-preview" title="Machamp"></img>
+                    <img src="images/generations/43.png" class="tcg-preview" title="Geodude"></img>
+                    <img src="images/generations/44.png" class="tcg-preview" title="Graveler"></img>
 
-            <img src="images/generations/45.png" class="tcg-preview" title="Golem"></img>
-            <img src="images/generations/46.png" class="tcg-preview" title="Golem EX"></img>
-            <img src="images/generations/47.png" class="tcg-preview" title="Hitmonlee"></img>
-            <img src="images/generations/48.png" class="tcg-preview" title="Hitmonchan"></img>
+                    <img src="images/generations/45.png" class="tcg-preview" title="Golem"></img>
+                    <img src="images/generations/46.png" class="tcg-preview" title="Golem EX"></img>
+                    <img src="images/generations/47.png" class="tcg-preview" title="Hitmonlee"></img>
+                    <img src="images/generations/48.png" class="tcg-preview" title="Hitmonchan"></img>
+                </div>
+                <p> Cards in Set: 115
+                    <br>
+                    Released: February 22nd, 2016
+                    <br>
+                    Info Source: <a href="http://bulbapedia.bulbagarden.net/wiki/BREAKthrough_(TCG)">Bulbapedia</a>
+                    <br>
+                    Picture Source: <a href="http://www.pokellector.com/sets/GEN-Generations">Pokellector</a>
+                </p> 
+            </div>
+
+            <br>
+
+            <!-- Footer -->
+            <div class="centered">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; Marrick Chan 2016</p>
+            </div>
+
+            <footer id="bottom"></footer>
+
+
+            
         </div>
-        <p> Cards in Set: 115
-            <br>
-            Released: February 22nd, 2016
-            <br>
-            Info Source: <a href="http://bulbapedia.bulbagarden.net/wiki/BREAKthrough_(TCG)">Bulbapedia</a>
-            <br>
-            Picture Source: <a href="http://www.pokellector.com/sets/GEN-Generations">Pokellector</a>
-        </p> 
-    </div>
-
-    <br>
-
-    <!-- Footer -->
-    <div class="centered">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; Marrick Chan 2016</p>
-    </div>
-
-    <footer id="bottom"></footer>
-
-
-    
-</div>
-</body>
+    </body>
 </html>
