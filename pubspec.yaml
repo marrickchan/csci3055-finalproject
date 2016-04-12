@@ -1,0 +1,10 @@
+name: my_app
+dependencies:
+  js: ^0.3.0
+  intl: ^0.12.4
+version: 1.0.0
+description: >
+  Searches images by indexing alt/title tags.
+author: Marrick Chan <marrickchan@gmail.com>
+dependencies:
+ browser: any
