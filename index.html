@@ -12,7 +12,7 @@
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     </head>
 
-    <body>
+    <body id="removeSearch">
         <div id="wrapper">
 
             <header id="top"></header>
@@ -32,12 +32,17 @@
                 </ul>
             </nav>  
 
+            <div class="centered" id="searchArea">
+                <p>Searching For:</p><p id="searchPreview"></p>
+            </div>
+
+            <br>
+
             <!-- Main Content for BREAKthrough -->
             <div class="centered mainContent">
                 <p></p>
                 <h1>Pokemon TCG: Generations Collection</h1>
                 <br><br>
-                <p>Searching for: <span id="searchPreview"></span></p>
 
                 <div class="card-block">
                     <img src="images/generations/1.png" class="tcg-preview" title="Venusaur EX"></img>
