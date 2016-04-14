@@ -75,6 +75,7 @@ h2 {
 }
 
 .centered {
+	position: relative;
 	padding: 10px;
 	min-width: 100px;
 	max-width: 1500px;
@@ -84,6 +85,17 @@ h2 {
 .mainContent {
 	padding-left: 45px;
 	padding-right: 45px;
+}
+
+.closeSearch {
+	position: absolute;
+	top: 15px; 
+	right: 15px;
+	width: 24px;
+	z-index: 9999;
+	height: 24px;
+	color: #000000;
+	text-transform: uppercase; 
 }
 
 /* IDs */
