@@ -32,6 +32,16 @@ The requirements in this project are as follows:
   * April 9th, 2016
     * Added search field on top bar for use after indexing.
     * Created initial Dart file for the webpage.
+  * April 10th, 2016
+    * Created folders for testing, did not work
+  * April 11th, 2016
+    * Created package which is not going to be used (found out later)
+  * April 14th, 2016
+    * Found error with compiling to javascript and got cross-browser compatibility working
+  * April 16th, 2016
+    * Add main data structure for searching
+    * Create function for searching in list
+      * Ran into issue with printing elements (possible it retrieves just a pointer to the element rather than the element itself)
 
 3. Problem Statement and Language Selection
   * The problem I am addressing is internal webpage searching. 
@@ -41,7 +51,6 @@ The requirements in this project are as follows:
   * The language I chose to address this issue is _Google Dart_ because:
     * Familiar/simple syntax
     * Ability to compile to JavaScript for compatibility with browsers
-    * 
 
 4. Brief Survey of Alternatives
   * As Dart compiles into _JavaScript_, that may be an alternative.
@@ -52,13 +61,18 @@ The requirements in this project are as follows:
     * DartPad - website used to run and learn sample code
     * dart2js - compiler to compile Dart into JavaScript
     * Sublime - text editor for website
+    * dart:html API - [dart:html library](https://api.dartlang.org/1.13.0/dart-html/dart-html-library.html "dart:html library")
 
 6. Code Walk
   * Main framework
-
-  ```Dart
-  "Dart sample code"
-  ```
+    * Variables
+    ```Dart
+    "Dart sample code"
+    ```
+    * Functions
+    ```Dart
+    "Dart sample code"
+    ```
 
   * Main search feature (within webpage)
 
@@ -80,16 +94,23 @@ The requirements in this project are as follows:
 
 ## To Do
 
-- [ ] Create initial webpage with usable features
-- [ ] Implement _Google Dart_ pop-up functionality in browser.
-- [ ] Implement _Google Dart_ input functionality.
-- [ ] Implement indexing for items on webpage.
+- [x] Create initial webpage with usable features
+  * Search feature displays new section when you press enter
+  * Close button on the search section when clicked
+- [x] Implement _Google Dart_ pop-up functionality in browser.
+  * Changed to a more simplistic view. New section appears on the top of the page instead of overlaying
+- [x] Implement _Google Dart_ input functionality.
+  * Search value gets passed into Google Dart to be used for search
+- [x] Implement indexing for items on webpage.
+  * All items that require searching are tagged with the tcg-preview class so that they can all be put into an ElementList
 - [ ] Optimize webpage loading if required.
 - [ ] Implement iteration/searching for indexed items.
 - [ ] Implement webpage hightlighting for search.
+
+## To Do - Extras
+
 - [ ] Implement indexing over entire website.
-- [ ] Optimize webpage loading if required.
-- [ ] Implement iteration/searching for indexed items.
+- [ ] Implement iteration/searching for indexed items on entire website.
 
 ***
 

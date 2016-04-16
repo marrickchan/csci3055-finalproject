@@ -46,6 +46,12 @@ h2 {
 	text-align: center;
 }
 
+.card-block-results { 
+	left: auto;
+	right: auto;
+	text-align: center;
+}
+
 .tcg-preview {
 	max-width: 285px;
 	max-height: 398px;
