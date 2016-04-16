@@ -65,11 +65,15 @@ The requirements in this project are as follows:
     * dart2js - compiler to compile Dart into JavaScript
     * Sublime - text editor for website
     * dart:html API - [dart:html library](https://api.dartlang.org/1.13.0/dart-html/dart-html-library.html "dart:html library")
+<<<<<<< 959e93c568d3d2a158149a67dd50b186032693e3
     * dart:core API - [dart:core library](https://api.dartlang.org/stable/1.15.0/dart-core/dart-core-library.html "dart:core library")
+=======
+>>>>>>> Updated README.md
 
 6. Code Walk
   * Main framework
     * Variables
+<<<<<<< 959e93c568d3d2a158149a67dd50b186032693e3
       * The variables contained here are the variables used for grabbing certain elements on the webpage
       ```Dart
       // Variables for DOM Elements
@@ -116,6 +120,15 @@ The requirements in this project are as follows:
         resultingImages = '';
       }
       ```
+=======
+    ```Dart
+    "Dart sample code"
+    ```
+    * Functions
+    ```Dart
+    "Dart sample code"
+    ```
+>>>>>>> Updated README.md
 
   * Main search feature (within webpage)
     * There are 3 functions used to create the search functionality. 
