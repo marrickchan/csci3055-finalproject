@@ -42,6 +42,11 @@ The requirements in this project are as follows:
     * Add main data structure for searching
     * Create function for searching in list
       * Ran into issue with printing elements (possible it retrieves just a pointer to the element rather than the element itself)
+  * April 18th, 2016
+    * Add final functionality for search
+      * Use search string to search for text
+      * Add outerHtml to string sent back to a result
+      * Result gets put into innerHtml for search area
 
 3. Problem Statement and Language Selection
   * The problem I am addressing is internal webpage searching. 
@@ -104,7 +109,7 @@ The requirements in this project are as follows:
 - [x] Implement indexing for items on webpage.
   * All items that require searching are tagged with the tcg-preview class so that they can all be put into an ElementList
 - [ ] Optimize webpage loading if required.
-- [ ] Implement iteration/searching for indexed items.
+- [x] Implement iteration/searching for indexed items.
 - [ ] Implement webpage hightlighting for search.
 
 ## To Do - Extras
