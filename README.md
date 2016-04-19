@@ -161,6 +161,10 @@ The requirements in this project are as follows:
     ```
 
 7. Relations to the Course
+  * Object Oriented Programming
+    * The different objects present in my project are the different Elements present, such as the div element, input element and element list
+  * Concurrency
+    * There is a part that is similar to concurrency in my project. The search field listens to both input and change so two things are always being listened to constantly.
 
 8. Live Demo
   * In the demo, I have provided details regarding...
